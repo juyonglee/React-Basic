@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import MyClassCompExample from "./components/MyClassCompExample";
-import MyFunctionCompExample from "./components/MyFunctionCompExample";
-import MyHookFunctionComponent from "./components/MyHookFunctionComponent";
+import MyClassCompExample from "./components/state/MyClassCompExample";
+import MyFunctionCompExample from "./components/state/MyFunctionCompExample";
+import MyHookFunctionComponent from "./components/state/MyHookFunctionComponent";
 
 function App() {
   return (
