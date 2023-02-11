@@ -14,6 +14,10 @@ function MyFuncLifeEx() {
   useEffect(() => {
     console.log("[useEffect] componentDidMount & componentDidUpdate by count")
     console.log("state:", state.count)
+    return () => {
+      console.log("[Clean Up] componentDidMount & componentDidUpdate by count")
+      console.log("state:", state.count)
+    }
   }, [state.count])
 
   const clickHandler = (e) => {
