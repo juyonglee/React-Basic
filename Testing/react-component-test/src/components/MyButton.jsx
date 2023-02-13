@@ -1,8 +1,6 @@
 function MyButton() {
   return (
-      <div>
-        <button>Button</button>
-      </div>
+      <button>Button</button>
   )
 }
 
