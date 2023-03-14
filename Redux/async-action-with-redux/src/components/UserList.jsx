@@ -1,13 +1,9 @@
 import {useEffect} from "react";
 
-export default function UserList({userInfos, start, fail, success}) {
+export default function UserList({userInfos, getUserInfos}) {
   useEffect(() => {
-    start()
-    fetch("https://api.github.com/users")
-    .then(response => response.json())
-    .then(userInfo => success(userInfo))
-    .catch(error => fail(error))
-  }, [start, success, fail])
+    getUserInfos()
+  }, [getUserInfos])
 
   if (userInfos.length === 0) {
     return <h5>Github User 정보가 존재하지 않습니다.</h5>
