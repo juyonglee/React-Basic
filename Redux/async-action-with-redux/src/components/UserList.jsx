@@ -8,7 +8,7 @@ export default function UserList({userInfos, start, fail, success}) {
     .then(userInfo => success(userInfo))
     .catch(error => fail(error))
   }, [start, success, fail])
-  
+
   if (userInfos.length === 0) {
     return <h5>Github User 정보가 존재하지 않습니다.</h5>
   }
