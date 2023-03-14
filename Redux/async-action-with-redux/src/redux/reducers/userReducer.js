@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   loading: false,
-  data: [],
+  userInfos: [],
   error: null
 };
 
@@ -20,13 +20,13 @@ export default function userReducer(state = initialState, action) {
   } else if (action.type === GET_USERS_SUCCESS) {
     return {
       ...state,
-      data: action.userInfos,
+      userInfos: action.userInfos,
       loading: false
     }
   } else if (action.type === GET_USERS_FAIL) {
     return {
       ...state,
-      data: [],
+      userInfos: [],
       loading: false,
       error: action.errorInfo
     }
