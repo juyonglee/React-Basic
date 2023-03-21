@@ -1,4 +1,5 @@
 import {combineReducers} from "redux";
-import {useReducer} from "react";
+import userReducer from "./userReducer";
+import userReducer from "./userReducer";
 
-export const rootReducer = combineReducers({github: useReducer})
+export const rootReducer = combineReducers({github: userReducer})
