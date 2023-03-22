@@ -6,3 +6,13 @@ export function getUserListCreator(userList) {
     userList: userList
   }
 }
+
+export function getUserListWithThunk() {
+  return async (dispatch) => {
+    const res = await fetch("https://api.github.com/users")
+    .then(response => response.json())
+    .then(userList => userList)
+    console.log(res)
+    return res
+  }
+}
